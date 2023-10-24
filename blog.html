@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Blog page of Portfolio">
+        <meta name="keywords" content="HTML,CSS,JavaScript,Portfolio,ICT">
+        <meta name="author" content="Lukas Kollar">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet">
+        <title>
+            Blog
+        </title>
+    </head>
+    <body>
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">My profile</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a class="active" href="blog.html">Blog</a></li>
+                <li style="float:right; color:white; margin:2px; padding-right:17px; padding-left:17px;"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></li>
+                <li style="float:right"><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <!-- Sidebar -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/CER-HZ-Bachelor-full-time-2023-2024-DEF-version-20230720.pdf" target="_blank">Course and Examination Regulations</a>
+            <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf" target="_blank">The Implementation Regulations</a>
+            <a href="https://learn.hz.nl/" target="_blank">HZ Learn</a>
+            <a href="https://teams.microsoft.com/l/channel/19%3a827654897ab746089c081f24aff1c984%40thread.skype/V%25C5%25A1eobecn%25C3%25A9?groupId=337e8cca-f67d-4132-9fa9-b0c761bbeb94&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c" target="_blank">ICT Teams</a>
+            <a href="https://hz.osiris-student.nl/#/home" target="_blank">MyHZ</a>
+            <a href="https://github.com/HZ-HBO-ICT" target="_blank">ICT GitHub</a>
+        </div>
+
+        <!-- Content -->
+        <div class="title">
+            <h1>Blog</h1>
+        </div>
+
+        <div class="blog">
+            <article>
+                <details open>
+                    <summary>Study choice</summary>
+                    <p>An article about my motivation for the study choice, study choice activities and what are the plans after completing the studies. 
+                        <a href="./blog/study_choice.html">Read more</a></p>
+                </details>
+            </article>
+            <article>
+                <details open>
+                    <summary>Personal SWOT analysis</summary>
+                    <p>An article about my personal SWOT analysis to find out about my strength, weaknesses, opportunities and threats. 
+                        <a href="./blog/swot.html">Read more</a></p>
+                </details>
+            </article>
+            <article>
+                <details open>
+                    <summary>Programming experience</summary>
+                    <p>An article about my previous experience with programming, what programming languages I have learnt in the past and for how long. 
+                        <a href="./blog/experience.html">Read more</a></p>
+                </details>
+            </article>
+            <article>
+                <details open>
+                    <summary>First feedback</summary>
+                    <p>An article the feedback I have received based on my WHO AM I form and my thoughts about the feedback. 
+                        <a href="./blog/feedback.html">Read more</a></p>
+                </details>
+            </article>
+            <article>
+                <details open>
+                    <summary>ICT field - Software Engineer</summary>
+                    <p>An article about the field of software engineering. 
+                        <a href="./blog/software_engineering.html">Read more</a></p>
+                </details>
+            </article>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript" src="script.js"></script>

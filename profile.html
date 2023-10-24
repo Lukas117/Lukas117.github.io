@@ -1,12 +1,66 @@
-<html>
+<!DOCTYPE html>
     <head>
-        <h1>
-            Lukas Kollar
-        </h1>
+        <meta charset="UTF-8">
+        <meta name="description" content="Profile page of Portfolio">
+        <meta name="keywords" content="HTML,CSS,JavaScript,Portfolio,ICT">
+        <meta name="author" content="Lukas Kollar">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet">
+        <title>
+            Profile
+        </title>
     </head>
     <body>
-        <p>
-            Welcome to my portfolio. I am planning to be a professional software developer!
-        </p>
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="profile.html">My profile</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li style="float:right; color:white; margin:2px; padding-right:17px; padding-left:17px;"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></li>
+                <li style="float:right"><a href="faq.html">FAQ</a></li>            
+            </ul>
+        </nav>
+
+        <!-- Sidebar -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/CER-HZ-Bachelor-full-time-2023-2024-DEF-version-20230720.pdf" target="_blank">Course and Examination Regulations</a>
+            <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf" target="_blank">The Implementation Regulations</a>
+            <a href="https://learn.hz.nl/" target="_blank">HZ Learn</a>
+            <a href="https://teams.microsoft.com/l/channel/19%3a827654897ab746089c081f24aff1c984%40thread.skype/V%25C5%25A1eobecn%25C3%25A9?groupId=337e8cca-f67d-4132-9fa9-b0c761bbeb94&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c" target="_blank">ICT Teams</a>
+            <a href="https://hz.osiris-student.nl/#/home" target="_blank">MyHZ</a>
+            <a href="https://github.com/HZ-HBO-ICT" target="_blank">ICT GitHub</a>
+        </div>
+
+        <!-- Content -->
+        <div class="title">
+            <h1>My profile</h1>
+        </div>
+        
+        <div style="display: flex; justify-content: space-evenly;">
+            <ol style="list-style: none;">
+                <h2>&#x004c&#x0075&#x006b&#x00e1&#x0161&#x0020&#x004b&#x006f&#x006c&#x006c&#x00e1&#x0072</h2>
+                <li>4 years of experience in IT field</li>
+                <li>AP Degree in Computer science</li>
+                <li>Skilled in .NET</li>
+                <br>
+                <li>Interested in new tech</li>
+                <li>Gamer</li>
+                <li>Working out</li>
+                <br>
+                <li><b>Characteristics: </b></li>
+                <ol style="list-style: none;">
+                    <li>Team player</li>
+                    <li>Detail-oriented</li>
+                    <li>Responsible</li>
+                    <li>Overthinker</li>
+                </ol>
+            </ol>
+            <img src="img/Kollar_Lukas.jpg" alt="My profile picture">
+        </div>
     </body>
 </html>
+
+<script type="text/javascript" src="script.js"></script>

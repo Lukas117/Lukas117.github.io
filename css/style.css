@@ -1,0 +1,299 @@
+body {
+    margin:0;
+    font-family: "Raleway", sans-serif;
+    background-color: #f0f1f5;
+}
+
+/* Nav bar CSS */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+li a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #888888;
+}
+
+/* Title CSS */
+
+h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+  
+h1 span {
+    display: block;
+    font-size: 0.5em;
+    line-height: 1.3;
+}
+
+h1 em {
+    font-style: normal;
+    font-weight: 600;
+}
+
+.title h1 {
+    padding-top: 60px;
+    font-weight:700;  
+    letter-spacing:1px; 
+    text-transform:uppercase; 
+    width:fit-content; 
+    text-align:center; 
+    margin:auto; 
+    white-space:nowrap; 
+    padding-bottom:13px;
+  }
+  
+  .title h1:before {
+      background-color: #1200b8;
+      content: '';
+      display: block;
+      height: 3px;
+      width: 75px;
+      margin-bottom: 5px;
+  }
+
+  .title h1:after {
+      background-color: #1200b8;
+      content: '';
+      display: block;
+    position:absolute; right:0; bottom:0;
+      height: 3px;
+      width: 75px;
+      margin-bottom: 0.25em;
+  }
+
+  /* Side navigation CSS */
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 46px;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  /* Image CSS */
+
+  img {
+    height: 407px;
+  }
+
+  .blog {
+    padding: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .img-container {
+    height: 187px; 
+    padding-bottom: 17px;
+    overflow: hidden;
+  }
+
+  .img-container img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+  }
+  
+  .imgText {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+      border: 1px solid #4b4b4b;
+      padding: 8px;
+      text-align: center;
+  }
+  
+  .header-background {
+    background-color: white;
+  }
+
+  .not-completed {
+      background-color: #f0f1f5;
+  }
+  .sufficient {
+      background-color: #95fd95;
+  }
+  .insufficient {
+      background-color: #FF8080;
+  }
+  
+  .dashboard {
+    padding: 20px;
+  }
+
+  .striped-background {
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(165, 214, 167, 0.5),  /* Light green color with 50% opacity */
+        rgba(165, 214, 167, 0.5) 10px,
+        rgba(76, 175, 80, 0.5),  /* Darker green color with 50% opacity */
+        rgba(76, 175, 80, 0.5) 10px
+    );
+    background-size: 100% 20px;
+  }
+
+/* Header styles */
+.header {
+    background: linear-gradient(90deg, #007BFF, #0056a0);
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    padding-top: 67px;    
+    border-bottom: 6px solid #004682;
+}
+
+.header h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+/* Main content styles */
+.main-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+/* Section styles */
+.about, .why-ict {
+    margin: 30px 0;
+}
+
+.about img, .why-ict img {
+    max-width: 100%;
+    display: block;
+    margin: 40px auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Text styles */
+.about p, .why-ict p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* List styles */
+.about ul, .about ol, .why-ict ul, .why-ict ol {
+    margin-left: 20px;
+    list-style: disc;
+    color: #007BFF;
+}
+
+/* Footer styles */
+.footer {
+    background: linear-gradient(90deg, #007BFF, #0056a0);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-top: 6px solid #004682;
+}
+
+.header-image {
+  position: absolute;
+  top: 47px;
+  right: 20px;
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+  z-index: 0; /* Ensures it's above the header text */
+}
+
+.reset-li {
+  float: unset;
+  display: unset;
+  color: unset;
+  text-align: unset;
+  padding: unset;
+  text-decoration: unset;
+  background-color: unset;
+  color: #007BFF; /* Initial text color */
+  text-decoration: underline;
+}
+
+.reset-li:hover:not(.active) {
+  background-color: unset;
+  color: blue; /* New text color on hover */
+    text-decoration: underline;
+}
+
+.reset-li.active {
+  background-color: unset;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Portfolio website">
+        <meta name="keywords" content="HTML,CSS,JavaScript,Portfolio,ICT">
+        <meta name="author" content="Lukas Kollar">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet">
+        <title>
+            Portfolio
+        </title>
+    </head>
+    <body>
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="profile.html">My profile</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li style="float:right; color:white; margin:2px; padding-right:17px; padding-left:17px;"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></li>
+                <li style="float:right"><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <!-- Sidebar -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/CER-HZ-Bachelor-full-time-2023-2024-DEF-version-20230720.pdf" target="_blank">Course and Examination Regulations</a>
+            <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf" target="_blank">The Implementation Regulations</a>
+            <a href="https://learn.hz.nl/" target="_blank">HZ Learn</a>
+            <a href="https://teams.microsoft.com/l/channel/19%3a827654897ab746089c081f24aff1c984%40thread.skype/V%25C5%25A1eobecn%25C3%25A9?groupId=337e8cca-f67d-4132-9fa9-b0c761bbeb94&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c" target="_blank">ICT Teams</a>
+            <a href="https://hz.osiris-student.nl/#/home" target="_blank">MyHZ</a>
+            <a href="https://github.com/HZ-HBO-ICT" target="_blank">ICT GitHub</a>
+        </div>
+
+        <!-- Content -->        
+        <header class="header">
+            <h1 style="color: white;">Welcome to My ICT Journey</h1>
+            <img class="header-image" src="./img/hzlogo.png" alt="Header Image">
+        </header>
+        <div class="main-content">
+            <section class="about" id="about">
+                <h2>About Me</h2>
+                <p>Hello! I'm Lukas, and I'm passionate about technology and innovation. 
+                    I believe that ICT is not just a field of study; it's a way of shaping the future. 
+                    My journey into the world of ICT began with a curiosity for how things work, 
+                    and it has evolved into a lifelong pursuit of knowledge and creativity.</p>
+                <ol>
+                    <li>Studying at <a class="reset-li" href="https://hz.nl/" target="_blank">HZ</a></li>
+                    <li>Passionate about programming and problem-solving</li>
+                    <li>Always eager to learn and adapt to new technologies</li>
+                    <li>Avid tech fan</li>
+                </ol>
+            </section>
+    
+            <section class="why-ict" id="why-ict">
+                <h2>Why ICT?</h2>
+                <p>ICT is a dynamic and ever-evolving field that offers endless opportunities for innovation and growth. 
+                    It's the backbone of the modern world, connecting people and devices, 
+                    and I want to be part of this transformation. Here are a few reasons why I believe ICT suits me:</p>
+                <ol>
+                    <li>Endless Learning: ICT is a field where you never stop learning. 
+                        There's always something new to discover, which keeps me excited and motivated.</li>
+                    <li>Problem-Solving: I enjoy tackling complex problems and finding efficient solutions, 
+                        which is at the core of ICT. The best feeling comes from resolving at first impossible problems.</li>
+                </ol>
+                <img src="./img/cf40f59e-7d56-4077-b0fa-0be47b24a5b5.jpg" alt="My Profile Picture">
+            </section>
+        </div>
+        <footer class="footer">
+            <p>Connect with me on <a style="color: white;" href="https://www.linkedin.com/in/luk%C3%A1%C5%A1-koll%C3%A1r/" target="_blank">LinkedIn</a></p>
+        </footer>
+    </body>
+</html>
+
+<script type="text/javascript" src="script.js"></script>
